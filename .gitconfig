@@ -1,0 +1,18 @@
+[core]
+        editor = vim
+[color]
+        ui     = auto
+        status = auto
+        branch = auto
+[user]
+        email = X
+        name = X
+[alias]
+        s = status
+        co = checkout
+        b = branch
+        c = commit
+        gl = log --pretty=oneline --graph
+        unstage = reset --
+[push]
+        default = simple
