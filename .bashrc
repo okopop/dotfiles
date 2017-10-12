@@ -13,8 +13,7 @@ if tty -s; then
             GIT_PS1_SHOWDIRTYSTATE=1
             if [ -r ~/.git-prompt.sh ] && git --version > /dev/null 2>&1; then
                 . $HOME/.git-prompt.sh
-                #PS1='\u@\h:\W$(__git_ps1)\$ '
-                PS1='\[\033[0;36m\]\u\[\033[1;30m\]@\[\033[1;34m\]\h:\[\033[0;32m\]\W$(__git_ps1)\$\[\e[0m\] '
+                PS1='\[\033\e[0;36m\]\u\[\033\e[1;30m\]@\[\033\e[1;34m\]\h:\[\033\e[0;32m\]\w$(__git_ps1)\[\033\e[m\]\n\\$ '
             else
                 PS1='\u@\h:\W\$ '
             fi
