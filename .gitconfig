@@ -1,18 +1,23 @@
 [core]
-        editor = vim
+  editor = vim
 [color]
-        ui     = auto
-        status = auto
-        branch = auto
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
 [user]
-        email = X
-        name = X
+  email = x
+  name = x
 [alias]
-        s = status
-        co = checkout
-        b = branch
-        c = commit
-        gl = log --pretty=oneline --graph
-        unstage = reset --
+  s = status
+  p = pull
+  co = checkout
+  b = branch
+  c = commit
+  gl = log --oneline --decorate --graph --all
+  h = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd - %cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=short
+  h2 = log --pretty=format:\"%h %ad | %s%d | [%an]\" --graph --date=short
 [push]
-        default = simple
+  default = simple
