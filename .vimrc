@@ -5,7 +5,8 @@ set shiftwidth=2   " Indents will have a width of 2
 set tabstop=4      " TAB width is set to 4, 'softtabstop' has this default value
 set expandtab      " Expand TABs to spaces
 
-" Get the 2-space YAML as the default when hit carriage return after the colon
+" yaml
+autocmd! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " Highlight trailing whitespace in red
