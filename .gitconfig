@@ -10,6 +10,8 @@
 [user]
   email = x
   name = x
+[commit]
+  template = ~/.git-commit-template
 [alias]
   s = status
   p = pull
