@@ -16,3 +16,6 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+
+" man page inside vim (rhel8) ex ":Man <subject>", move around with ctrl+w
+source /usr/share/vim/vim80/ftplugin/man.vim
